@@ -1,0 +1,2 @@
+sleep 20
+/usr/bin/epiphany http://localhost/xs-portal/en/
