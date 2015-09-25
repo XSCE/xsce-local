@@ -1,5 +1,6 @@
-#!/bin/bash
+#!/bin/bash -x
 # Absolute path to this script.
+shopt -s dotglob
 SCRIPT=$(readlink -f $0)
 # Absolute path this script is in.
 SCRIPTPATH=`dirname $SCRIPT`
