@@ -13,6 +13,8 @@ rm -f /etc/alsa/sound.state
 rm -f /etc/ssh/ssh_host_rsa_key{,.pub}
 rm -f /etc/sysconfig/network
 rm -rf /home/olpc/.sugar /home/olpc/.gconf* /home/olpc/.local.share.telepathy
+rm -f /home/olpc/.config/epiphany/cookies.sqlite
+rm -f /home/olpc/.config/epiphany/ephy-history.db
 rm -rf /home/.devkey.html
 rm -f /root/.netrc
 rm -rf /root/tools
