@@ -3,7 +3,6 @@
 # cp restorebashrc /root/.bashrc
 rm -f /root/.ssh/*
 rm -f /etc/xsce/uuid
-echo "Default handle" > /etc/xsce/handle
 rm -f /.olpc-configured
 rm -f /home/olpc/.olpc-configured
 rm -rf /etc/NetworkManager/system-connections/*
