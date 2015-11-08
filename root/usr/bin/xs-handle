@@ -3,7 +3,15 @@
 if [ $# -eq 0 ]; then
    read -p "What identifying handle should be assigned to this computer?" ans
    if [ -z "$ans" ]; then
-     echo "Default_handle" > /etc/xsce/handle
+		  if [ -f /proc/device-tree/mfg-data/SN ];then
+			  UUID=`cat /proc/device-tree/mfg-data/SN`
+			  MODEL=`cat /proc/device-tree/mfg-data/MN`
+           snip=${UUID:6:11}
+			  echo "$MODEL-$snip">/etc/xsce/handle
+			  echo "$UUID">/etc/xsce/uuid
+        else
+           echo "Default_handle" > /etc/xsce/handle
+		  fi
    else
      echo "$ans" > /etc/xsce/handle
    fi

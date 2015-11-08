@@ -19,9 +19,3 @@ rm -f /root/.netrc
 rm -rf /root/tools
 cd /root
 
-# Turn off services which permit remote access to this machine
-systemctl disable openvpn@xscenet
-systemctl stop openvpn@xscenet
-systemctl disable sshd.service
-systemctl stop sshd.service
-

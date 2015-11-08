@@ -1,0 +1,8 @@
+#!/bin/bash
+# Turn off services which permit remote access to this machine
+systemctl disable openvpn@xscenet
+systemctl stop openvpn@xscenet
+systemctl disable sshd.service
+systemctl stop sshd.service
+echo "\n\nRemote Administration has been turned OFF.  OpenVPN and sshd deamons are now off.  In future if you want to re-enable remote maintenance and product improvement, run "xs-remote-on" from Terminal."
+
