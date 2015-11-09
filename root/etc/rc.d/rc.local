@@ -11,7 +11,7 @@ if [ -f /proc/device-tree/mfg-data/SN ]; then
 	UUID=`cat /proc/device-tree/mfg-data/SN`
 fi
 
-if [ ! -z UUID -a "$UUID" != "CURRENT_UUID" ]; then
+if [ ! -z UUID -a ( "$UUID" != "CURRENT_UUID" ) ]; then
 		  if [ -f /proc/device-tree/mfg-data/SN ];then
 			  UUID=`cat /proc/device-tree/mfg-data/SN`
 			  MODEL=`cat /proc/device-tree/mfg-data/MN`
