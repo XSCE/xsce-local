@@ -4,4 +4,4 @@ systemctl enable openvpn@xscenet
 systemctl start openvpn@xscenet
 systemctl enable sshd.service
 systemctl start sshd.service
-echo "\n\nWARNING: Remote Administration is ON to permit remote maintenance and product improvement.  To turn off all remote access to your computer, run "xs-remote-off" from Terminal."
+echo -e "\n\nWARNING: Remote Administration is ON to permit remote maintenance and product improvement.  To turn off all remote access to your computer, run "xu -c xs-remote-off" from Terminal.\n\n"

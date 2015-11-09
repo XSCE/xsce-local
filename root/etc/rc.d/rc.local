@@ -16,7 +16,7 @@ if [ ! -z UUID -a "$UUID" != "CURRENT_UUID" ]; then
 			  UUID=`cat /proc/device-tree/mfg-data/SN`
 			  MODEL=`cat /proc/device-tree/mfg-data/MN`
            snip=${UUID:6:11}
-			  echo "$MODEL-$snip">/etc/xsce/handle
+			  echo "$MODEL_$snip">/etc/xsce/handle
 			  echo "$UUID">/etc/xsce/uuid
 		  fi
 fi
