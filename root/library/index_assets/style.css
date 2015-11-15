@@ -2,7 +2,7 @@ body {
     background-color: #CBFFAA;
     font-family: sans-serif;
     font-size: 100%;
-    width: 1200px;
+    width: 1180px;
     margin: auto;
 }
 
@@ -27,6 +27,7 @@ b { font-weight: bold; }
 #header {
     display: block;
     height: 120px;
+    width:100%;
     background: #000 url('iiab_banner4.png') no-repeat 0 0;
     border-radius: 5px;
     margin: auto;
