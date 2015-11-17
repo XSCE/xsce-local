@@ -66,6 +66,7 @@ b { font-weight: bold; }
 .content-item img {
     width: 120px;
     margin-right: 10px;
+    margin-bottom: 30px;
     border-radius: 5px;
     float: left;
 }
