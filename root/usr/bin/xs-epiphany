@@ -1,3 +1,0 @@
-#!/bin/bash
-rm /home/olpc/.config/epiphany/session_state.xml
-epiphany file:///library/index.html

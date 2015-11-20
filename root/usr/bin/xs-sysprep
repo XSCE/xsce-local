@@ -5,6 +5,7 @@ rm -f /root/.ssh/*
 rm -f /etc/xsce/uuid
 rm -f /.olpc-configured
 rm -f /home/olpc/.olpc-configured
+rm -f /root/.bash_history /home/olpc/.bash_history
 rm -rf /etc/NetworkManager/system-connections/*
 rm -f /etc/sysconfig/network-scripts/keys*
 ls -1 /etc/sysconfig/network-scripts/ifcfg* |grep -v -eifcfg-lo|xargs rm -f
