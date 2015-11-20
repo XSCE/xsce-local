@@ -21,11 +21,6 @@
     <property id="8" value_type="gint">2</property>
     <parent id="1"/>
   </node>
-  <node id="54">
-    <property id="5" value_type="gchararray">HOME</property>
-    <property id="8" value_type="gint">2</property>
-    <parent id="1"/>
-  </node>
   <node id="30">
     <property id="2" value_type="gchararray">Fedora Documentation</property>
     <property id="3" value_type="gchararray">http://docs.fedoraproject.org/</property>
@@ -164,8 +159,8 @@
   <node id="53">
     <property id="2" value_type="gchararray">Internet in a Box - HOME</property>
     <property id="3" value_type="gchararray">file:///library/index.html</property>
-    <property id="4" value_type="gchararray">home  internet in a box - home</property>
+    <property id="4" value_type="gchararray"> internet in a box - home</property>
     <parent id="0"/>
-    <parent id="54"/>
+    <parent id="3"/>
   </node>
 </ephy_bookmarks>

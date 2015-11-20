@@ -132,7 +132,6 @@
   <item rdf:about="file:///library/index.html">
     <title>Internet in a Box - HOME</title>
     <link>file:///library/index.html</link>
-    <dc:subject>HOME</dc:subject>
   </item>
   <item rdf:about="http://10.4.75.96:80/">
     <title>Officejet Pro 8600 [E0BFCE]</title>
