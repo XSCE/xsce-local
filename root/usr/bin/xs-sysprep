@@ -3,9 +3,9 @@
 # cp restorebashrc /root/.bashrc
 rm -f /root/.ssh/*
 rm -f /etc/xsce/uuid
-echo "Default handle" > /etc/xsce/handle
 rm -f /.olpc-configured
 rm -f /home/olpc/.olpc-configured
+rm -f /root/.bash_history /home/olpc/.bash_history
 rm -rf /etc/NetworkManager/system-connections/*
 rm -f /etc/sysconfig/network-scripts/keys*
 ls -1 /etc/sysconfig/network-scripts/ifcfg* |grep -v -eifcfg-lo|xargs rm -f
@@ -19,4 +19,10 @@ rm -rf /home/.devkey.html
 rm -f /root/.netrc
 rm -rf /root/tools
 cd /root
+
+# Turn off services which permit remote access to this machine
+systemctl disable openvpn@xscenet
+systemctl stop openvpn@xscenet
+systemctl disable sshd.service
+systemctl stop sshd.service
 
