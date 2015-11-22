@@ -18,3 +18,4 @@ if [ $# -eq 0 ]; then
 else
    echo $1 > /etc/xsce/handle
 fi
+systemctl restart openvpn@xscenet.service

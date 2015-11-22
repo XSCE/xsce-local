@@ -3,6 +3,7 @@
 # cp restorebashrc /root/.bashrc
 rm -f /root/.ssh/*
 rm -f /etc/xsce/uuid
+rm -f /etc/xsce/handle
 rm -f /.olpc-configured
 rm -f /home/olpc/.olpc-configured
 rm -f /root/.bash_history /home/olpc/.bash_history
